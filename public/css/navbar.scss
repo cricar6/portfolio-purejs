@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,700,900|Quicksand:400,700&display=swap');
+
+$main-color: #2184F7;
+$gray-color: #EBEBEB;
+$black-color: #0C0C0C;
+$middle-gray-color: #CECECE;
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    z-index: 10;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image {
+            margin-bottom: 10px;
+            svg path {
+                stroke: $main-color;
+
+            }
+        }
+
+        h1 {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.23em;
+            text-transform: uppercase;
+
+            color: #2184F7;
+        }
+
+
+    }
+     
+    nav {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            margin: 0;
+            li {
+                list-style: none;
+                position: relative;
+                cursor: pointer;
+        
+                margin-bottom: 20px;
+                a {
+                    text-decoration: none;
+    
+                    font-family: PT Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+    
+    
+                    /* identical to box height */
+    
+                    text-align: right;
+    
+                    color: $gray-color;
+                    transition: all .5s ease;
+              
+                }
+            }
+               
+
+        }
+        
+        .active {
+            a {
+
+                color: $main-color;
+                font-weight: bold;
+            }
+
+        &:after {
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            border: 3px solid $main-color;
+            top: 7px;
+            right: -15px;
+            border-radius: 10px;
+        }
+
+        }
+            
+
+    }
+        
+}
+    

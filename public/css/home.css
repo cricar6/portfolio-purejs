@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,700,900|Quicksand:400,700&display=swap");
+canvas {
+  opacity: .1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body {
+  -webkit-transition: ease .5s all;
+  transition: ease .5s all;
+  padding: 0;
+  margin: 0;
+}
+
+.Home {
+  width: 300vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-y: hidden;
+}
+
+.Home .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 20px);
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Home .banner_screen {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+}
+
+.Home .banner_screen .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  width: 97vw;
+  height: 100vh;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Home .banner_screen .main_copy {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: center;
+  color: #2184F7;
+}
+
+.Home .banner_screen .main_copy b {
+  font-weight: 900;
+}
+
+.Home .banner_screen .word_banner {
+  font-family: Quicksand;
+  color: #CECECE;
+}
+
+.Home .banner_screen .scroll_popper {
+  left: calc(50% - 25px);
+  position: absolute;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 192.4%;
+  /* or 23px */
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0C0C0C;
+}
+
+.Home .banner_screen .scroll_popper svg path {
+  stroke: #0C0C0C;
+}
+
+.Home .approach_screen {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.Home .approach_screen .hands .left {
+  width: 160px;
+  height: 286px;
+  position: absolute;
+  bottom: 0;
+  left: calc(45% - 20%);
+  background-image: url("../assets/H2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+.Home .approach_screen .hands .right {
+  width: 200px;
+  height: 216px;
+  position: absolute;
+  top: 0;
+  left: calc(45% + 20%);
+  background-image: url("../assets/H1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+
+.Home .approach_screen .container {
+  text-align: center;
+}
+
+.Home .approach_screen .container h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  color: #0C0C0C;
+  opacity: 0.5;
+}
+
+.Home .approach_screen .container .main {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0;
+  /* identical to box height */
+  text-align: center;
+  color: #FF4A91;
+  opacity: 1;
+}
+
+.Home .approach_screen .container .main b {
+  font-weight: 900;
+}
+
+.Home .approach_screen .container p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 192.4%;
+  /* or 31px */
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #000000;
+  opacity: 0.4;
+  max-width: 430px;
+}
+
+.Home .approach_screen .nominals p {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  color: #0C0C0C;
+  margin: 10px 0 5px 0;
+}
+
+.Home .approach_screen .nominals .nominal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 2px solid #0C0C0C;
+}
+
+.Home .approach_screen .nominals .nominal_container .nominal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100px;
+  margin: 10px;
+}
+
+.Home .approach_screen .nominals .nominal_container .nominal .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.Home .approach_screen .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+.Home .approach_screen .description h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: right;
+  color: #0C0C0C;
+}
+
+.Home .approach_screen .description h2 b {
+  color: #2184F7;
+}
+
+.Home .approach_screen .description p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 192.4%;
+  /* or 31px */
+  text-align: right;
+  letter-spacing: 0.08em;
+  color: #0C0C0C;
+}
+
+.Home .approach_screen .photo {
+  height: 100%;
+  position: relative;
+  right: 0;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Home .approach_screen .photo img {
+  height: 90%;
+}
+
+.Home .projects_screen {
+  position: relative;
+}
+
+.Home .projects_screen .project {
+  z-index: 10;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #2184F7;
+  border-radius: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: Quicksand;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.Home .projects_screen .project p {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.Home .projects_screen .project:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.Home .projects_screen .project p {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+/*# sourceMappingURL=home.css.map */
