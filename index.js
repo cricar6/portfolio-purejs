@@ -180,6 +180,6 @@ app.get('/projects/:name', (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log("Server has been initialized in port: "+ port)
+app.listen(process.env.PORT || port, () => {
+    console.log("Server has been initialized");
 });
