@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,700,900|Quicksand:400,700&display=swap");
+.contact {
+  width: calc(100vw - 100px);
+  margin: 0 50px;
+}
+
+h5 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 171.7%;
+  /* or 79px */
+  text-align: center;
+}
+/*# sourceMappingURL=contact.css.map */

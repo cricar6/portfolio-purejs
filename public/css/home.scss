@@ -13,28 +13,13 @@ canvas {
     left: 0;
 }
 
-body {
-    transition: ease .5s all;
-    padding: 0;
-    margin: 0;
-}
-
 .Home {
     width: 300vw;
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
-    .screen {
-        display: flex;
-        justify-content: center;
-        height: calc(100vh - 20px);
-        width: 100vw;
-        box-sizing: border-box;
-    }
+
     .banner_screen {
-        flex-direction: column;
-        align-items: center;
-        background: #FFFFFF;
         .container {
             display: flex;
             flex-direction: column;
@@ -67,31 +52,6 @@ body {
         .word_banner {
             font-family: Quicksand;
             color: $middle-gray-color;
-        }
-        .scroll_popper {
-            left: calc(50% - 25px);
-            position: absolute;
-            bottom: 50px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: PT Sans;
-
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 192.4%;
-            /* or 23px */
-
-            text-align: center;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-
-            color: $black-color;
-
-            svg path {
-                stroke: $black-color;
-            }
         }
     }
     .approach_screen {

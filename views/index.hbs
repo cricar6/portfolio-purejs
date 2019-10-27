@@ -7,7 +7,10 @@
     <title>Cristian Rodriguez | Portfolio</title>
 
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/home.css">
+
+    <link rel="shortcut icon" type="image/png" href="../assets/fav.png"/>
 
 </head>
 
@@ -35,44 +38,48 @@
 
         <nav id="mainmenu">
             <ul>
-                <li class="active" data-menuanchor="The-Beginning"><a href="/#TheBeginning">The Beginning</a></li>
+                <li class="active" data-menuanchor="The-Beginning"><a href="/#TheBeginning" data-scroll="#begining">The
+                        Beginning</a></li>
                 <li data-menuanchor="The-Approach"><a href="/#TheApproach">The Approach</a></li>
                 <li data-menuanchor="The-Projects"><a href="/#TheProjects">The projects</a></li>
                 <li><a href="/AboutMe">About me</a></li>
-                <li><a href="/Contact">Contact</a></li>
+                <li><a href="/#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <div class="Home" id="home">
+    <div id="wrapper">
 
-        <section class="banner_screen screen section" >
-            <div class="container">
-                <div class="main_copy">
-                    Good design is about creating <b>smiles  (:</b>
-                </div>
-                <div class="word_banner">
-                    <span> Methodical /</span>
-                    <span> Warm /</span>
-                    <span> Idealist /</span>
-                    <span> Mediator /</span>
-                    <span> Team Worker /</span>
-                    <span> Error Learner</span>
-                </div>
-                <a href="/#TheApproach">
-                    <div class="scroll_popper">
-                        <p>Wanna meet me?</p>
-                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 2L9.5 9L17 2" stroke-width="3" stroke-linecap="round" />
-                            <path d="M2 9L9.5 16L17 9" stroke-width="3" stroke-linecap="round" />
-                        </svg>
+        <div class="Home" id="home">
 
+            <section class="banner_screen screen section" id="TheBeginning">
+                <div class="container">
+                    <div class="main_copy">
+                        Good design is about creating <b>smiles (:</b>
                     </div>
-                </a>
-            </div>
-        </section>
-        <section class="approach_screen screen section" >
+                    <div class="word_banner">
+                        <span> Methodical /</span>
+                        <span> Warm /</span>
+                        <span> Idealist /</span>
+                        <span> Mediator /</span>
+                        <span> Team Worker /</span>
+                        <span> Error Learner</span>
+                    </div>
+                    <a href="/#TheApproach">
+                        <div class="scroll_popper">
+                            <p>Wanna meet me?</p>
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2L9.5 9L17 2" stroke-width="3" stroke-linecap="round" />
+                                <path d="M2 9L9.5 16L17 9" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="approach_screen screen section" id="TheApproach">
                 <div class="hands">
                     <div class="left">
 
@@ -81,23 +88,40 @@
 
                     </div>
                 </div>
-            <div class="container">
-                <h2>UI Designer + Front-End Developer + UX Designer</h2>
-                <p class="main">Thinking about <b>experience.</b></p>
-                <p>i take UI Design and Development as tools to build experiences. Finally that’s what people will feel.</p>
-            </div>
-        </section>
-
-        <section class="projects_screen screen section">
-            <a href="/projects/code_design">
-                <div class="project">
-                    <p>CodeDesign<br /><b>FrontEnd</b></p>
+                <div class="container">
+                    <h2>UI Designer + Front-End Developer + UX Designer</h2>
+                    <p class="main">Thinking about <b>experience.</b></p>
+                    <p>i take UI Design and Development as tools to build experiences. Finally that’s what people will
+                        feel.</p>
                 </div>
-            </a>
-        </section>
+            </section>
+
+            <section class="projects_screen screen section" id="TheProjects">
+                 {{#each projects}}
+                 
+                <a href="/projects/{{id}}">
+                    <div class="project">
+                        <p>{{name}}<br /><b>{{field}}</b></p>
+                    </div>
+                </a>
+                    <div class="comment">
+                        <h2>{{subject}}</h2>
+                        {{{body}}}
+                        </div>
+                    {{/each}}
+            </section>
+        </div>
     </div>
     <script src="js/p5.js"></script>
     <script src="js/sketch.js"></script>
+    <script type='text/javascript'
+        src='https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+
+    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+
+
+    <script src="js/sweet-scroll.js"></script>
+
 
 
     <script src="js/uifeatures.js"></script>

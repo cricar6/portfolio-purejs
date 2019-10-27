@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,700,900|Quicksand:400,700&display=swap");
+.screen {
+  height: auto;
+}
+
+.Project .banner {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Project .banner__controler {
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Project .banner__controler .prev, .Project .banner__controler .next {
+  margin: 0 70px;
+}
+
+.Project .banner__controler h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: center;
+  color: #0C0C0C;
+}
+
+.Project .banner__controler p.category {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  /* or 31px */
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #000000;
+  opacity: 0.2;
+  margin-top: -10px;
+}
+
+.Project .banner__mockup {
+  min-width: 350px;
+  width: 70%;
+  height: 450px;
+  position: absolute;
+  right: 0;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.Project .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Project .intro .text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #0C0C0C;
+  max-width: 350px;
+  padding: 0 10px;
+}
+
+.Project .intro .image {
+  margin: 50px;
+  width: 350px;
+  height: 410px;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+}
+
+.Project .wave {
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.Project .wave .waveback {
+  width: 100%;
+}
+
+.Project .wave .waveback svg {
+  width: 100%;
+}
+
+.Project .wave .waveback svg path {
+  fill: #2184F7;
+}
+
+.Project .wave .wavecontainer {
+  height: 50vh;
+  width: 100%;
+  background: #2184F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Project .wave .wavecontainer .text {
+  width: 350px;
+  z-index: 3;
+  background: #2184F7;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 200px;
+}
+
+.Project .wave .wavecontainer .text .title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.Project .wave .wavecontainer .text .body {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.Project .wave .wavecontainer .mockup {
+  min-width: 350px;
+  width: 70%;
+  height: 70vh;
+  min-width: 450px;
+  position: absolute;
+  right: 0;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+/*# sourceMappingURL=project.css.map */

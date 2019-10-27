@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,700,900|Quicksand:400,700&display=swap");
+.profileContainer {
+  width: calc(100vw - 100px);
+  margin: 150px 50px 0 50px;
+  height: calc(100vh - 500px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profileContainer .photo {
+  width: 70%;
+  height: 100%;
+  background: black;
+  background-size: cover;
+  background-position: center;
+  z-index: 4;
+  position: relative;
+}
+
+.profileContainer .photo .name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 116%;
+  /* or 23px */
+  color: #CECECE;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-align: left;
+  position: absolute;
+  bottom: 125px;
+  right: -100px;
+}
+
+.infocontainer {
+  width: calc(100vw - 100px);
+  margin: 20px 50px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infocontainer .description {
+  width: calc(60% - 50px);
+}
+
+.infocontainer .description .text {
+  padding-left: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171.7%;
+  /* or 24px */
+  text-align: justify;
+  color: #0C0C0C;
+}
+
+.infocontainer .description .downloadcv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.infocontainer .description .downloadcv .icon {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  z-index: 50;
+}
+
+.infocontainer .description .downloadcv .icon svg path {
+  stroke: #CECECE;
+}
+
+.infocontainer .description .downloadcv p {
+  color: #CECECE;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 171.7%;
+  /* or 27px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  letter-spacing: 0.46em;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.infocontainer .description .downloadcv:hover .icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.infocontainer .competencies {
+  width: calc(40% - 50px);
+  z-index: 40;
+}
+
+.infocontainer .competencies__container {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: auto;
+}
+
+.infocontainer .competencies__container .competencie {
+  width: 140px;
+  height: 90px;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.infocontainer .competencies__container .competencie:hover .photo {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.infocontainer .competencies__container .competencie .photo {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-filter .5s ease;
+  transition: -webkit-filter .5s ease;
+  transition: filter .5s ease;
+  transition: filter .5s ease, -webkit-filter .5s ease;
+  -webkit-filter: brightness(0.3) contrast(110%) saturate(250%);
+          filter: brightness(0.3) contrast(110%) saturate(250%);
+}
+
+.infocontainer .competencies__container .competencie .text {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 10px;
+}
+
+.experience {
+  width: calc(100vw - 100px);
+  margin: 0 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experience__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.experience__container [category="des"] {
+  background: #2184F7;
+}
+
+.experience__container [category="dev"] {
+  background: #FF4A91;
+}
+
+.experience__container .item {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  margin: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.experience__container .item img {
+  width: 50%;
+  height: 50%;
+}
+
+.title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 171.7%;
+  /* or 31px */
+  color: #2184F7;
+}
+/*# sourceMappingURL=about.css.map */
