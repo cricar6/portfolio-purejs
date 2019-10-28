@@ -18,8 +18,12 @@ canvas {
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+
 
     .banner_screen {
+        scroll-snap-align: start;
+
         .container {
             display: flex;
             flex-direction: column;
@@ -55,6 +59,8 @@ canvas {
         }
     }
     .approach_screen {
+        scroll-snap-align: start;
+
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -230,6 +236,8 @@ canvas {
 
     .projects_screen {
         position: relative;
+        scroll-snap-align: start;
+
         .project {
             z-index: 10;
             position: absolute;

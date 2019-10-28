@@ -16,6 +16,12 @@ canvas {
       -ms-flex-direction: row;
           flex-direction: row;
   overflow-y: hidden;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.Home .banner_screen {
+  scroll-snap-align: start;
 }
 
 .Home .banner_screen .container {
@@ -61,6 +67,7 @@ canvas {
 }
 
 .Home .approach_screen {
+  scroll-snap-align: start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -258,6 +265,7 @@ canvas {
 
 .Home .projects_screen {
   position: relative;
+  scroll-snap-align: start;
 }
 
 .Home .projects_screen .project {
