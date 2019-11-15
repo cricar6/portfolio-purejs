@@ -14,6 +14,7 @@
 
 </head>
 
+
 <body>
     <header class="NavBar">
         <div class="logo">
@@ -38,26 +39,11 @@
 
         <nav id="mainmenu">
             <ul>
-                <li class="active">
-                    <a href="#TheBeginning">
-                The Beginning</a>
-                </li>
-                <li>
-                    <a href="#TheApproach">
-                The Approach</a>
-                </li>
-                <li>
-                    <a href="#TheProjects">
-                The projects</a>
-                </li>
-                <li>
-                    <a href="/AboutMe">
-                About me</a>
-                </li>
-                <li>
-                    <a href="#Contact">
-                Contact</a>
-                </li>
+                <li class="active" data-menuanchor="The-Beginning"><a href="/#TheBeginning" data-scroll="#begining">The
+                        Beginning</a></li>
+                <li data-menuanchor="The-Projects"><a href="/projects">The projects</a></li>
+                <li><a href="/AboutMe">About me</a></li>
+                <li><a href="/Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -80,14 +66,17 @@
                         <span> Team Worker /</span>
                         <span> Error Learner</span>
                     </div>
-                    <a href="/#TheApproach">
-                        <div class="scroll_popper">
-                            <p><b>Wanna meet me?</b> <br> Scroll Down</p>
-                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 2L9.5 9L17 2" stroke-width="3" stroke-linecap="round" />
-                                <path d="M2 9L9.5 16L17 9" stroke-width="3" stroke-linecap="round" />
-                            </svg>
+                    <a href="/projects">
+                        <div class="scroll_popper popper--main">
+                            <div class="button--main">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4157 1.8052L16.7895 5.34622C17.6258 5.81082 17.6258 6.85587 16.7895 7.32047L15.7163 7.91668L16.7895 8.51288C17.6258 8.97748 17.6258 10.0225 16.7895 10.4871L15.7163 11.0833L16.7895 11.6795C17.6258 12.1441 17.6258 13.1892 16.7895 13.6538L10.4157 17.1948C9.88321 17.4906 9.11687 17.4906 8.58442 17.1948L2.21058 13.6538C1.3743 13.1892 1.3743 12.1441 2.21058 11.6795L3.28376 11.0833L2.21058 10.4871C1.3743 10.0225 1.3743 8.97748 2.21058 8.51288L3.28376 7.91668L2.21058 7.32047C1.3743 6.85587 1.3743 5.81082 2.21058 5.34622L8.58442 1.8052C9.11687 1.50939 9.88321 1.50939 10.4157 1.8052ZM10.4157 10.8615L14.0862 8.82231L15.306 9.50001L14.0862 10.1777L12.456 11.0833L9.64673 12.6441C9.59248 12.6742 9.4076 12.6742 9.35336 12.6441L6.54404 11.0833L4.9139 10.1777L3.69404 9.50001L4.9139 8.82231L8.58442 10.8615C9.11687 11.1573 9.88321 11.1573 10.4157 10.8615ZM4.9139 11.989L3.69404 12.6667L9.35336 15.8107C9.4076 15.8409 9.59248 15.8409 9.64673 15.8107L15.306 12.6667L14.0862 11.989L10.4157 14.0282C9.88321 14.324 9.11687 14.324 8.58442 14.0282L4.9139 11.989ZM9.35335 3.18928C9.4076 3.15914 9.59247 3.15914 9.64672 3.18928L15.306 6.33334L9.64672 9.47741C9.59247 9.50754 9.4076 9.50754 9.35335 9.47741L3.69403 6.33334L9.35335 3.18928Z" fill="white"/>
+                                    </svg>
+                                                                    <p>Watch the projects?</p>
+
+                            </div>
+
+
                         </div>
                     </a>
                 </div>
@@ -104,24 +93,11 @@
                 <div class="container">
                     <h2>UI Designer + Front-End Developer + UX Designer</h2>
                     <p class="main">Thinking about <b>experience.</b></p>
-                    <p>I take UI Design and Development as tools to build experiences, cause at the end that's the most valuable for people</p>
+                    <p>i take UI Design and Development as tools to build experiences. Finally that’s what people will
+                        feel.</p>
                 </div>
             </section>
 
-            <section class="projects_screen screen section" id="TheProjects">
-                 {{#each projects}}
-                 
-                <a href="/projects/{{id}}">
-                    <div class="project">
-                        <p>{{name}}<br /><b>{{field}}</b></p>
-                    </div>
-                </a>
-                    <div class="comment">
-                        <h2>{{subject}}</h2>
-                        {{{body}}}
-                        </div>
-                    {{/each}}
-            </section>
         </div>
     </div>
     <script src="js/p5.js"></script>

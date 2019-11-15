@@ -9,7 +9,84 @@ $middle-gray-color: #CECECE;
 
 .contact {
     width: calc(100vw - 100px);
+    height: auto;
     margin: 0 50px;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.dataContainer {
+    display: flex;
+    flex-direction: row;
+    .profileData, .contactData {
+        width: 50%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profileData {
+        .name p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 45px;
+            text-align: right;
+
+            color: $black-color;
+            margin: 0;
+        }
+        .profession p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: right;
+
+            color: $black-color;
+
+            margin: 0;
+        }
+        .location {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: right;
+
+            color: $middle-gray-color;
+
+            margin: 0
+        }
+    }
+    .contactData {
+        .socialMedia {
+            display: flex;
+            flex-direction: row;
+            .media {
+                margin: 0 10px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .otherData {
+            .email p, .phone p{
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: left;
+    
+                color: $middle-gray-color;
+    
+                margin: 0
+            }
+        }
+    }
 }
 h5 {
     font-family: Poppins;
@@ -20,5 +97,6 @@ h5 {
     /* or 79px */
 
     text-align: center;
-
+    color: $black-color;
+    margin: 0
 }

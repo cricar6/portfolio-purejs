@@ -64,45 +64,57 @@ $middle-gray-color: #CECECE;
             color: $black-color;
 
         }
-        .downloadcv {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
 
-            .icon {
-                transition: transform .5s ease;
-                z-index: 50;
-                svg {
-                    path {
-                        stroke: $middle-gray-color;
-                    }
-                }
-
-            }
-            p {
-                color: $middle-gray-color;
-                font-family: PT Sans;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 171.7%;
-                /* or 27px */
-
+            .downloadcv {
                 display: flex;
                 align-items: center;
-                text-align: justify;
-                letter-spacing: 0.46em;
-                text-transform: uppercase;
+                z-index: 10;
+                cursor: pointer;
+                text-decoration: none;
 
-                margin-left: 20px;
-            }
-            &:hover {
                 .icon {
+                    transition: transform .5s ease;
+                    z-index: 50;
+                    svg {
+                        path {
+                            stroke: $middle-gray-color;
+                        }
+                    }
+    
+                }
+                p {
+                    color: $middle-gray-color;
+                    font-family: PT Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 171.7%;
+                    /* or 27px */
+    
+                    display: flex;
+                    align-items: center;
+                    text-align: justify;
+                    letter-spacing: 0.46em;
+                    text-transform: uppercase;
+    
+                    margin-left: 20px;
+                    z-index: 50;
+                    transition: color .5s ease;
+                }
+                &:hover {
+                    .icon {
+                        transform: scale(1.1);
+                        svg path {
+                            stroke: $black-color;
+                        }
+                    }
+                    p {
+                        color: $black-color;
 
-                    transform: scale(1.1);
+                    }
                 }
             }
-        }
+        
     }
     .competencies {
         width: calc(40% - 50px);
@@ -167,6 +179,7 @@ $middle-gray-color: #CECECE;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        z-index: 10;
         [category = "des"] {
             background: $main-color;
         }
@@ -174,6 +187,7 @@ $middle-gray-color: #CECECE;
             background: $sec-color;
         }
         .item {
+            z-index: 10;
             width: 30px;
             height: 30px;    
             display: flex;
@@ -181,12 +195,24 @@ $middle-gray-color: #CECECE;
             align-items: center;    
             border-radius: 40px;
             margin: 10px;  
-            flex-shrink: 0;     
-            img {
-                width: 50%;
-                height: 50%;
-            }
+            flex-shrink: 0; 
+            opacity: .2;
+            cursor: pointer;   
+            transition: opacity .5s ease; 
         }
+    }
+    .item__changer {
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 171.7%;
+        /* or 31px */
+
+        text-align: center;
+
+        color: #000000;
+
     }
 }
 

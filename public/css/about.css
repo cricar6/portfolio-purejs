@@ -71,7 +71,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .infocontainer .description .downloadcv .icon {
@@ -104,11 +106,22 @@
   letter-spacing: 0.46em;
   text-transform: uppercase;
   margin-left: 20px;
+  z-index: 50;
+  -webkit-transition: color .5s ease;
+  transition: color .5s ease;
 }
 
 .infocontainer .description .downloadcv:hover .icon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.infocontainer .description .downloadcv:hover .icon svg path {
+  stroke: #0C0C0C;
+}
+
+.infocontainer .description .downloadcv:hover p {
+  color: #0C0C0C;
 }
 
 .infocontainer .competencies {
@@ -202,6 +215,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 10;
 }
 
 .experience__container [category="des"] {
@@ -213,6 +227,7 @@
 }
 
 .experience__container .item {
+  z-index: 10;
   width: 30px;
   height: 30px;
   display: -webkit-box;
@@ -228,11 +243,21 @@
   margin: 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  opacity: .2;
+  cursor: pointer;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
 }
 
-.experience__container .item img {
-  width: 50%;
-  height: 50%;
+.experience .item__changer {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 171.7%;
+  /* or 31px */
+  text-align: center;
+  color: #000000;
 }
 
 .title {

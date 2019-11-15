@@ -14,16 +14,12 @@ canvas {
 }
 
 .Home {
-    width: 300vw;
+    width: 200vw;
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
-    scroll-snap-type: y mandatory;
-
 
     .banner_screen {
-        scroll-snap-align: start;
-
         .container {
             display: flex;
             flex-direction: column;
@@ -59,8 +55,6 @@ canvas {
         }
     }
     .approach_screen {
-        scroll-snap-align: start;
-
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -234,52 +228,91 @@ canvas {
         }
     }
 
-    .projects_screen {
-        position: relative;
-        scroll-snap-align: start;
+    
+}
+$width: 300px;
 
-        .project {
-            z-index: 10;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: #2184F7;
-            border-radius: 500px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            color: white;
-    
-            font-family: Quicksand;
-            font-style: normal;
-            font-size: 20px;
-            line-height: 25px;
-            /* identical to box height */;
-    
-            text-align: center;
-            letter-spacing: 0.23em;
-            text-transform: uppercase;
-            transition: all .5s ease;
-            cursor: pointer;
-            p {
+        .projects_screen {
+            position: relative;
+            overflow: hidden;
+            .project {
+                top: calc(100vh - 300px - 40px);
+                left: calc(100vw - 300px - 40px);
+                z-index: 10;
+                position: absolute;
+                width: $width;
+                height: $width;
+                border-radius: 500px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                opacity: .5;
+                font-family: Quicksand;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 25px;
+                /* identical to box height */;
+        
+                text-align: center;
+                letter-spacing: 0.23em;
+                text-transform: uppercase;
                 transition: all .5s ease;
-    
-            }
-    
-            &:hover {
-                transform: scale(1.2);
-    
-            }
-                p  {
-    
-                    transform: scale(0.8);
+                cursor: pointer;
+                p {
+                    transition: all .5s ease;
+        
                 }
-                
+        
+                &:hover {
+                    transform: scale(1.2);
+        
+                }
+                    p  {
+        
+                        transform: scale(0.8);
+                    }
+                    
+            }
+        
+            [type="design"] {
+                background:#FF4A91 ;
+            }
+            [type="code"] {
+                background: #2184F7;
+            }
         }
-    
-    
+
+.button--main {
+    background: $main-color;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+    z-index: 100;
+    width: 175px;
+    &:hover {
+        opacity: .9;
+        transform: scale(1.1);
     }
+    svg {
+        margin-right: 10px;
+        path{
+            fill: white;
+            stroke: none;
+        }
+    } 
     
+}
+
+
+.popper--main {
+    left: calc(50% - 100px + 100vw);
+    position: absolute;
 }

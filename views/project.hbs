@@ -37,11 +37,10 @@
 
         <nav id="mainmenu">
             <ul>
-                <li class="active" data-menuanchor="The-Beginning"><a href="/#TheBeginning">The Beginning</a></li>
-                <li data-menuanchor="The-Approach"><a href="/#TheApproach">The Approach</a></li>
-                <li data-menuanchor="The-Projects"><a href="/#TheProjects">The projects</a></li>
+                <li data-menuanchor="The-Beginning"><a href="/#TheBeginning">The Beginning</a></li>
+                <li  class="active" data-menuanchor="The-Projects"><a href="/#TheProjects">The projects</a></li>
                 <li><a href="/AboutMe">About me</a></li>
-                <li><a href="/#Contact">Contact</a></li>
+                <li><a href="/Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -82,6 +81,7 @@
             </div>
         </div>
 
+        {{#if id=='ice_cream'}}
         <div class="intro screen">
             <p class="text">
                 {{introtextnormal}} <b>{{introtextbold}}</b>
@@ -111,12 +111,26 @@
                 </div>
             </div>
         </div>
-        <div class="process screen">
+        <div class="image" style="background-image: url('../assets/projects/iceCream/trivia.png');">
+            
+        </div>
+        <div class="textS">
+            <p>
+                The project was about the redesign of Ice Cream Nation’s website. It focused in a young target between 18 and 24 years, with the purpose to get more young people.
+The trivia is selected by its engaging and its ease of sharing on social media.
+            </p>
+        </div>
+        <div class="image" style="background-image: url('../assets/projects/iceCream/characters.png');">
 
         </div>
-        <div class="image screen">
-
+        <div class="title">
+            <p>The characters</p>
         </div>
+        <div class="textS">
+            <p>Were selected vivid colors to attract people’s interest. The different colours and accesories were added to make it personanizable, the people answered a trivia and the app tell them.</p>
+        </div>
+        {{/if}}
+
     </div>
 </body>
 

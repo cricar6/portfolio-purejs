@@ -9,25 +9,3 @@ window.addEventListener('wheel', function(e) {
   else item.scrollLeft -= 100;
 });
 
-document.addEventListener(
-  'DOMContentLoaded',
-  () => {
-    const scroller = new SweetScroll({
-      /* some options */
-    });
-  },
-  false,
-);
-
-if  (window.location.href == "https://cristianrodriguez.herokuapp.com/#TheBeginning") {
-  console.log("beg");
-} else if (window.location.href == "https://cristianrodriguez.herokuapp.com/#TheApproach") {
-  console.log("apro");
-
-} else if (window.location.href == "https://cristianrodriguez.herokuapp.com/#TheProjects") {
-  console.log("proj");
-
-} else if (window.location.href == "https://cristianrodriguez.herokuapp.com/#Contact") {
-  console.log("contac");
-
-} 

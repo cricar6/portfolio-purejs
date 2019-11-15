@@ -9,6 +9,7 @@ let app = express();
 let database = [
     {
         id: "ice_cream",
+        type: "code",
         field: "FrontEnd - UI Design",
         name: "Ice Cream Nation",
         category: "Web Redesign",
@@ -16,7 +17,18 @@ let database = [
         introtextbold: "create an experience that interest people and atract more customers.",
         bannermock: "../assets/projects/iceCream/bannerMockUp.png",
         introimage: "../assets/projects/iceCream/intro.png",
-    }
+    },
+    {
+        id: "kal",
+        type: "design",
+        field: "Brand Design",
+        name: "Kal",
+        category: "Brand Design",
+        introtextnormal: "In the redesign of the Ice Cream Nation website had the challenge to ",
+        introtextbold: "create an experience that interest people and atract more customers.",
+        bannermock: "../assets/projects/iceCream/bannerMockUp.png",
+        introimage: "../assets/projects/iceCream/intro.png",
+    },
 ]
 
 const competencies= [
@@ -152,6 +164,13 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects', {
+        projects: database
+    });
+});
+
+
 app.get('/AboutMe', (req, res) => {
     res.render('about', {
         competencies: competencies,
@@ -162,7 +181,6 @@ app.get('/AboutMe', (req, res) => {
 app.get('/Contact', (req, res) => {
     res.render('contact');
 });
-
 
 app.get('/projects/:name', (req, res) => {
     let project = 

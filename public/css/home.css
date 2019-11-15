@@ -7,7 +7,7 @@ canvas {
 }
 
 .Home {
-  width: 300vw;
+  width: 200vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,12 +16,6 @@ canvas {
       -ms-flex-direction: row;
           flex-direction: row;
   overflow-y: hidden;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-.Home .banner_screen {
-  scroll-snap-align: start;
 }
 
 .Home .banner_screen .container {
@@ -67,7 +61,6 @@ canvas {
 }
 
 .Home .approach_screen {
-  scroll-snap-align: start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -263,17 +256,18 @@ canvas {
   height: 90%;
 }
 
-.Home .projects_screen {
+.projects_screen {
   position: relative;
-  scroll-snap-align: start;
+  overflow: hidden;
 }
 
-.Home .projects_screen .project {
+.projects_screen .project {
+  top: calc(100vh - 300px - 40px);
+  left: calc(100vw - 300px - 40px);
   z-index: 10;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  background: #2184F7;
+  width: 300px;
+  height: 300px;
   border-radius: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +284,7 @@ canvas {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  opacity: .5;
   font-family: Quicksand;
   font-style: normal;
   font-size: 20px;
@@ -303,18 +298,68 @@ canvas {
   cursor: pointer;
 }
 
-.Home .projects_screen .project p {
+.projects_screen .project p {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
-.Home .projects_screen .project:hover {
+.projects_screen .project:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.Home .projects_screen .project p {
+.projects_screen .project p {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+.projects_screen [type="design"] {
+  background: #FF4A91;
+}
+
+.projects_screen [type="code"] {
+  background: #2184F7;
+}
+
+.button--main {
+  background: #2184F7;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding: 0px 20px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 100;
+  width: 175px;
+}
+
+.button--main:hover {
+  opacity: .9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.button--main svg {
+  margin-right: 10px;
+}
+
+.button--main svg path {
+  fill: white;
+  stroke: none;
+}
+
+.popper--main {
+  left: calc(50% - 100px + 100vw);
+  position: absolute;
 }
 /*# sourceMappingURL=home.css.map */
