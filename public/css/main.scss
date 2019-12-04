@@ -57,3 +57,16 @@ body {
         stroke: $black-color;
     }
 }
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PT Sans;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 192.4%;
+}
