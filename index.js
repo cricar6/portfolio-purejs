@@ -465,6 +465,6 @@ app.get('/projects/:name', (req, res) => {
   });
 });
 // process.env.PORT || 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {  
   console.log("Server has been initialized");
 });
